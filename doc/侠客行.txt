@@ -1,0 +1,53 @@
+侠客行
+赵客缦胡缨，吴钩霜雪明。
+银鞍照白马，飒沓如流星。
+十步杀一人，千里不留行。
+事了拂衣去，深藏身与名。
+闲过信陵饮，脱剑膝前横。
+将炙啖朱亥，持觞劝侯嬴。
+三杯吐然诺，五岳倒为轻。
+眼花耳热后，意气素霓生。
+救赵挥金槌，邯郸先震惊。
+千秋二壮士，烜赫大梁城。
+纵死侠骨香，不惭世上英。
+谁能书阁下，白首太玄经。
+
+
+
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+// 一行文字的显示
+public class Words : MonoBehaviour
+{
+    public GameObject mWordPrefeb;
+    public string mWords;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Debug.Log("mWords=" + mWords);
+
+        foreach(char word in mWords) {
+            GameObject obj = Instantiate(mWordPrefeb, transform);
+            Word objWord = obj.GetComponent<Word>();     // 获取挂在的对象
+            obj.name = ""+ word;
+            objWord.setWord(word);
+
+            Debug.Log("word=" + word);
+            if(word == ' ')  // 换行
+            {
+                Debug.Log("word= 换行");
+            }
+        }
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

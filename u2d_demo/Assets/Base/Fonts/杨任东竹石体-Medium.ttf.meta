@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 36a078885182f48a7aa744cbe611ae32
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - YRDZST
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 626fb022c4bbe49a0a8dbe0f014056b2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
