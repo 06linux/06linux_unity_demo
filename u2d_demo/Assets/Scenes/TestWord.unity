@@ -1005,6 +1005,10 @@ PrefabInstance:
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4257073189582380889, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: mFontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257073189582380889, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
       propertyPath: mStartTime
       value: 0.35
       objectReference: {fileID: 0}
