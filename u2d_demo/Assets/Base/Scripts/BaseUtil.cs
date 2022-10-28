@@ -46,7 +46,7 @@ public class BaseUtil
 
     // 读取资源文件，游戏配置数据，json 配置等等， 在 asset/ 目录下
     // 只读属性
-    public static string LoadResData(string name)
+    public static string ResDataLoad(string name)
     {
         string retStr = "";
 
