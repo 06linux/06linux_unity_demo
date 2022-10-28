@@ -15,6 +15,8 @@ public class BaseUtil
             writer.Write(data);
             writer.Close();
             fs.Close();
+
+            Debug.Log("Success, UserDataSave path=" + path);
         }
         catch (Exception e)
         {
