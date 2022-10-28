@@ -388,7 +388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4181921895398942717, guid: 93394be226a5b4cf387a604fb1929afa, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4181921895398942717, guid: 93394be226a5b4cf387a604fb1929afa, type: 3}
       propertyPath: m_AnchorMax.x
@@ -473,6 +473,10 @@ PrefabInstance:
     - target: {fileID: 4181921895398942718, guid: 93394be226a5b4cf387a604fb1929afa, type: 3}
       propertyPath: mColor.r
       value: 0.01668743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181921895398942718, guid: 93394be226a5b4cf387a604fb1929afa, type: 3}
+      propertyPath: mDelayTime
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93394be226a5b4cf387a604fb1929afa, type: 3}
@@ -583,6 +587,10 @@ PrefabInstance:
       propertyPath: mColor.r
       value: 0.9150943
       objectReference: {fileID: 0}
+    - target: {fileID: 1566730378029408357, guid: 6379edc9f58dc46eb85ac6828113677d, type: 3}
+      propertyPath: mDelayTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1566730378029408358, guid: 6379edc9f58dc46eb85ac6828113677d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -593,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1566730378029408358, guid: 6379edc9f58dc46eb85ac6828113677d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1566730378029408358, guid: 6379edc9f58dc46eb85ac6828113677d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -637,15 +645,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1566730378029408358, guid: 6379edc9f58dc46eb85ac6828113677d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1566730378029408358, guid: 6379edc9f58dc46eb85ac6828113677d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1566730378029408358, guid: 6379edc9f58dc46eb85ac6828113677d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1566730378029408358, guid: 6379edc9f58dc46eb85ac6828113677d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -969,13 +977,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4257073189723203801
+--- !u!1001 &1967694976
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3362514883469410871, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362514883469410871, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362514883469410871, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362514883469410871, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257073189582380889, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: mDelayTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257073189582380889, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: mStartTime
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257073189582380889, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: mDelayTimeLine
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257073189582380889, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
+      propertyPath: mDelayTimeWord
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4257073189582380891, guid: b09d63ca778254d3e93e075a8aa7d1d6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -25,6 +25,9 @@ public class WordLine : MonoBehaviour
     public int mFontSize = 10;
     public FontStyles mFontStyle = FontStyles.Normal;
 
+    public float mStartTime = 0;    // 初始显示时间
+    public float mDelayTimeWord = 0;    // 下一个文字的时间间隔
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,27 +44,37 @@ public class WordLine : MonoBehaviour
     // 只能在初始化的时候调用一次
     void initWords(string words)
     {
+        int index = 0;
+
         foreach (char word in mWords)
         {
+            index++;
+
             GameObject obj = Instantiate(mWordPrefeb, transform);
-            Word objWord = obj.GetComponent<Word>();     // 获取挂载的脚本组件对象
-            obj.name = "" + word;
-            objWord.setWord(word, mColor, mFontSize, mFontStyle);
+            Word objScript = obj.GetComponent<Word>();     // 获取挂载的脚本组件对象
+            objScript.name = "" + word;
+            objScript.setWord(word);
+            objScript.setColor(mColor);
+            objScript.setFontSize(mFontSize);
+            objScript.setFontStyle(mFontStyle);
+            objScript.setDelayTime(mStartTime + index * mDelayTimeWord);
         }
     }
 
     // 只能在初始化的时候调用一次
-    public void setLine(string words)
+    public void setWords(string words)
     {
         mWords = words;
     }
 
-    public void setLine(string words, Color color, int fontSize, FontStyles style)
+    public void setWords(string words, Color color, int fontSize, FontStyles style, float startTime, float deleyTimeWord)
     {
         mWords = words;
         mColor = color;
         mFontSize = fontSize;
         mFontStyle = style;
+        mStartTime = startTime;
+        mDelayTimeWord = deleyTimeWord;
     }
 
 }
